@@ -1,0 +1,439 @@
+@import 'fonts.css';
+
+
+:root{
+    --m-l:'montserrat-light';
+    --r-b:'raleway-bold';
+    --r-e-b:'raleway-extrabold';
+    --r-m:'raleway-medium';
+    --r-r:'raleway-regular';
+    --r-s: 'raleway-semibold';
+}
+ 
+
+
+body{
+    min-width: 320px;
+    font-family: var(--m-l);
+    color: #8c8c8c;
+    font-size: 14px;
+}
+
+
+/* *********************************************************** */
+/* --------------------- header start ------------------------ */
+
+.header__menu{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+header{
+    background: url(../img/fon-one.jpg) no-repeat center center / cover;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #191919;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.header__logo{
+    font-size: 30px;
+    color: #191919;
+}
+
+.header__text-title{
+    font-size: 35px;
+    color: #1d1d1d;
+}
+
+.header__text-p{
+    font-size: 15px;
+    color: #787878;
+    line-height: 25px;
+    margin-top: 31px;
+    margin-bottom: 53px;
+}
+
+
+.header__text-button{
+    font-size: 12px;
+    color: aliceblue;
+    text-transform: uppercase;
+    border: none;
+    background: #007d2f;
+    padding: 22px 45px;
+    transition: 0.5s;
+}
+
+
+.header__text-button:hover{
+    background: #0ab904;
+}
+
+.header__text{
+    margin-top: 30%;
+}
+
+
+/* ********************************************************** */
+/* ----------------------- about start ---------------------- */
+
+.about{
+    padding-top: 92px;
+    padding-bottom: 42px;
+}
+
+.about__title{
+    font-size: 34px;
+    color: #191919;
+}
+
+.about__p{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    color: #787878;
+}
+
+/* *********************************************************** */
+/* ---------------------- skills start ----------------------- */
+
+.skills__img{
+    width: 100%;
+}
+
+.skills__row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.skills__col{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.skills__title{
+    font-size: 30px;
+    color: #171717;
+}
+
+
+.skills__design, .skills__web, .skills__marketing{
+    font-size: 12px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 41px;
+}
+
+.skills__design::after, .skills__web::after, .skills__marketing::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #007d2f 75%, #d8d8d8 25%);
+    margin-top: 20px;
+}
+
+.skills__web::after{
+    background: linear-gradient(to right, #007d2f 90%, #d8d8d8 10%);
+}
+
+.skills__marketing::after{
+    background: linear-gradient(to right, #007d2f 65%, #d8d8d8 35%);
+}
+
+.skills{
+    background: #f8f9f9;
+}
+
+.skills__professional{
+    padding: 166px 55px 0 130px;
+}
+
+/* *********************************************************** */
+/* ---------------------- icon start ------------------------- */
+
+.icon{
+    padding: 77px 0;
+    background: #007d2f;
+}
+
+.icon__logo-fal{
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.icon__logo-nul{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 900;
+    margin: 13px 0 15px 0;
+}
+
+
+.icon__logo-project{
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* *********************************************************** */
+/* --------------------- gallery start ----------------------- */
+
+.gallery__icon{
+    position: relative;
+}
+
+.gallery__icon-img{
+    width: 100%;
+}
+
+.gallery__icon-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525af;
+    border: none;
+    color: #ffffff;
+    font-size: 45px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.gallery__icon:hover .gallery__icon-button{
+    opacity: 1;
+}
+
+.gallery__text{
+    width: 100%;
+    background: #007d2f;
+    padding: 45px 0 40px;
+    text-align: center;
+}
+
+.gallery__text-load{
+    font-size: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: var(--m-l);
+}
+
+
+/* *********************************************************** */
+/* ---------------------- video start ------------------------ */
+
+.video{
+    padding: 100px 0;
+}
+
+.video__tilte{
+    font-size: 43px;
+    color: #191919;
+    font-family: var(--m-l);
+}
+
+.video__p{
+    font-size: 22px;
+    color: #787878;
+    font-family: var(--m-l);
+    padding-top: 28px;
+    padding-bottom: 42px;
+    line-height: 32px;
+}
+
+.video__iframe{
+    width: 100%;
+    height: 700px;
+}
+
+/* *********************************************************** */
+/* --------------------- logoIcon start ---------------------- */
+
+.logoIcon{
+    background: #f5f5f5;
+    padding: 50px 0 100px;
+}
+
+.logoIcon__fab{
+    color: #666666;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.logoIcon__text{
+    font-size: 11px;
+    color: #191919;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 31px;
+    margin-bottom: 19px;
+}
+
+.logoIcon__p{
+    font-size: 15px;
+    color: #787878;
+}
+
+/* *********************************************************** */
+/* ---------------------- slider start ----------------------- */
+
+.slider{
+    background: #007d2f;
+    padding: 60px 0;
+}
+
+.slider__text{
+    font-size: 19px;
+    color: #ffffff;
+    margin-top: 20%;
+}
+
+.slider__p{
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 45px;
+    margin-bottom: 25%;
+}
+
+.carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active{
+    width: 10px;
+    height: 10px;
+}
+
+.carousel-indicators {
+    align-items: center;
+}
+
+/* *********************************************************** */
+/* ------------------- brend-logo slider --------------------- */
+
+
+.brend-logo{
+    padding: 66px 0;
+}
+
+.brend-logo__img{
+    width: 100%;
+}
+
+/* *********************************************************** */
+/* ----------------------- form start ------------------------ */
+
+.form{
+    padding: 28px 0 100px;
+    background: #f5f5f5;
+}
+
+.form__title{
+    font-size: 30px;
+    font-family: var(--m-l);
+    font-weight: 900;
+    color: #1d1d1d;
+}
+
+.form__text{
+    font-size: 16px;
+    color: #787878;
+    margin-top: 41px;
+}
+
+.form__input, .form__textarea{
+    width: 100%;
+    padding: 18px 14px;
+    border: none;
+    font-size: 15px;
+    color: #787878;
+    margin-top: 30px;
+}
+
+.form__button{
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #007d2f;
+    padding: 23px 0;
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* *********************************************************** */
+/* ---------------------- media start ------------------------ */
+
+@media (max-width: 1226px){
+    .skills__professional {
+        padding: 19% 55px 0 130px;
+    }
+}
+
+@media (max-width: 1080px){
+    .skills__professional {
+        padding: 17% 55px 0 86px;
+    }
+}
+
+@media (max-width: 1000px){
+    .skills__design, .skills__web, .skills__marketing {
+        margin-top: 17px;
+    }
+}
+
+@media (max-width: 991px){
+    .navbar-nav {
+        background: #058800;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 4px 16px 3px #8c8c8c;
+      }
+}
+
+@media (max-width: 797px){
+    .skills__title {
+        font-size: 25px;
+    }
+
+    .skills__design::after, .skills__web::after, .skills__marketing::after {
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 767px){
+    .skills__professional {
+        padding: 17% 10%;
+    }
+
+    .icon__logo-fal {
+       margin-top: 50px;
+    }
+
+    .video__iframe {
+        height: 500px;
+    }
+
+    .video__tilte {
+        font-size: 30px;
+    }
+
+    .video__p {
+        font-size: 16px;
+        padding-top: 6px;
+        padding-bottom: 20px;
+        line-height: 19px;
+    }
+}
